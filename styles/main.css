@@ -33,6 +33,7 @@ body{
   font-size: 0.875rem;
   margin: 0;
   color: var(--content);
+  background: linear-gradient(180deg, var(--gray--500) 0%, var(--white) 73.96%);
 }
 
 img{
@@ -69,10 +70,16 @@ a{
 
 /* 헤더 */
 .header{
-  background-color: yellow;
+  background-color: var(--white);
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  border-radius: 0 0 15px 15px;
+  padding: 0 28px;
+
+  /* &:hover{
+    border-radius: 0 30px 0 30px / 0 60px 0 60px;
+  } */
 }
 
 /* 브랜드, 로고 */
@@ -117,6 +124,10 @@ a{
   }
 }
 
+/* 메인 메뉴 */
+.menu{
+  background: orangered;
+}
 
 /* 비주얼 */
 .visual{
