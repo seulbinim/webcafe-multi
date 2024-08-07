@@ -1,3 +1,11 @@
+/* 웹폰트 - SUIT */
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 컬러 테마 */
 :root{
   /* Color styles */
@@ -34,6 +42,7 @@ body{
   margin: 0;
   color: var(--content);
   background: linear-gradient(180deg, var(--gray--500) 0%, var(--white) 73.96%);
+  font-family: 'SUIT-Regular';
 }
 
 img{
@@ -139,6 +148,29 @@ a{
 /* 메인 메뉴 */
 .menu{
   background: orangered;
+  padding-left: 205px;
+  border-top: 2px solid var(--black);
+  display: flow-root;
+  /* overflow: hidden; */
+  
+  .menu-item{
+    float: left;
+  }
+
+  .menu-button{
+    border: 0;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.125rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .sub-menu{
+    background-color: pink;
+    position: absolute;
+    display: none;
+  }
 }
 
 /* 비주얼 */
