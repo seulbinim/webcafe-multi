@@ -1,0 +1,13 @@
+.box{
+  border: 1px solid red;
+  /* width: 700px; */
+  inline-size: 700px;
+  /* height: 50px; */
+  /* block-size: 50px; */
+  padding: 50px;
+  /* margin: 20px auto; */
+  margin-inline: auto;
+  /* margin-block: 20px; */
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}

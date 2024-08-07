@@ -1,0 +1,168 @@
+/* 컬러 테마 */
+:root{
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --primary: rgba(237, 85, 47, 1);
+  --secondary: rgba(232, 133, 46, 1);
+  --content: rgba(24, 24, 24, 1);
+  --gray--100: rgba(245, 245, 245, 1);
+  --gray--200: rgba(235, 235, 235, 1);
+  --gray--300: rgba(224, 224, 224, 1);
+  --gray--400: rgba(214, 214, 214, 1);
+  --gray--500: rgba(204, 204, 204, 1);
+  --gray--600: rgba(163, 163, 163, 1);
+  --gray--700: rgba(122, 122, 122, 1);
+  --gray--800: rgba(82, 82, 82, 1);
+  --gray--900: rgba(41, 41, 41, 1);
+  --accent--blue: rgba(41, 104, 151, 1);
+  --accent--yellow: rgba(255, 255, 0, 1);
+  --accent--green: rgba(68, 114, 49, 1);
+}
+
+/* 기본 스타일 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--content);
+}
+
+img{
+  /* display: block; */
+  vertical-align: top;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 유틸리티 클래스 */
+.layout{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.reset-list{
+  margin: 0;
+  padding-left: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+/* 레이아웃 */
+.header, .visual, .main, .slogan, .footer{
+  /* width: 940px;
+  inline-size: 940px;
+  margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto; */
+}
+
+/* 헤더 */
+.header{
+  background-color: yellow;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+/* 브랜드, 로고 */
+.brand{
+  /* background-color: purple; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 텍스트 링크모음 (멤버서비스) */
+.member-service{
+  background-color: yellowgreen;
+  order: -1;
+  /* display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end; */
+  font-size: 0;
+  text-align: right;
+  translate: 8px;
+  
+
+  li{
+    background-color: pink;
+    display: inline-block;
+    /* margin-left: -5px; */
+    font-size: 0.875rem;
+  }
+
+  span, a{
+    display: inherit;
+  }
+
+  span{
+    margin: 0 8px;
+  }
+
+  a{
+    text-transform: uppercase;
+    background-color: aqua;
+    padding: 8px;
+  }
+}
+
+
+/* 비주얼 */
+.visual{
+  background-color: orange;
+  height: 10vh;
+}
+
+/* 메인 */
+.main{
+  background-color: darkblue;
+  padding: 28px 16px 12px;
+  /* padding: 0 15px; */
+  height: 60vh;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row nowrap;
+  gap: 44px;
+  justify-content: center;
+}
+.group{
+  background-color: violet;
+  /* margin: 0 15px; */
+}
+.group1{
+  order: 1;
+  width: 250px;
+}
+.group2{
+ width:380px;
+}
+.group3{
+  width: 190px;
+}
+
+/* 슬로건 */
+.slogan{
+  background-color: lime;
+  height: 10vh;
+}
+
+/* 푸터 */
+.footer-bg{
+  background-color: silver;
+}
+.footer{
+  background-color: skyblue;
+  height: 10vh;
+}
