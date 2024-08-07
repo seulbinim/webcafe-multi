@@ -140,7 +140,7 @@ a{
 }
 
 .menu{
-  background: orangered;
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 30.73%, var(--primary) 64.58%, var(--secondary) 100%);
   padding-left: 205px;
   border-top: 2px solid var(--black);
   display: flow-root;
@@ -149,6 +149,7 @@ a{
   .menu-item{
     float: left;
     border-left: 1px solid var(--white);
+    position: relative;
   }
 
   .menu-button{
@@ -159,14 +160,55 @@ a{
     cursor: pointer;
     font-weight: 700;
     padding: 17px 24px;
+    text-shadow: 1px 1px 0 var(--black);
   }
 
   .sub-menu{
     background-color: pink;
     position: absolute;
     display: none;
+    white-space: nowrap;
+
+    li{
+      display: inline-block;
+    }
+  }
+
+  .menu-html, .menu-css, .menu-standards{
+    left: 0;
+  }
+
+  .menu-accessibility, .menu-qna, .menu-archive{
+    right: 0;
+  }
+
+  /* .menu-html{
+    
+  }
+  .menu-css{
+    
+  }
+  .menu-standards{
+    
+  }
+
+  .menu-accessibility{
+
+  }
+  .menu-qna{
+    
+  }
+  .menu-archive{
+    display: block;
+  } */
+
+  .is-active{
+    .sub-menu{
+      display: block;
+    }
   }
 }
+
 
 /* 비주얼 */
 .visual{
