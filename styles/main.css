@@ -490,6 +490,10 @@ a{
   }
 }
 
+/* 게시판 */
+.board{
+  background: yellow;
+}
 
 /* 슬로건 */
 .slogan{
