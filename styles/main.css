@@ -302,6 +302,37 @@ a{
 .login{
   background: orangered;
   box-shadow: 5px 5px 0 0 var(--gray--500);
+  padding: 12px;
+  border-radius: 5px;
+
+  h2{
+    font-size: 0.9375rem;
+    color: var(--accent--yellow);
+    margin-bottom: 10px;
+  }
+
+  form, & > div{
+    background: var(--white);
+  }
+
+  form{
+    border-radius: 5px 5px 0 0;
+  }
+
+  fieldset{
+    position: relative;
+  }
+
+  button[type="submit"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  & > div{
+    border-radius: 0 0 5px 5px;
+  }
+
 }
 
 
