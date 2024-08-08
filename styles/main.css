@@ -327,6 +327,20 @@ a{
     border-bottom: 1px solid var(--gray--500);
   }
 
+  .input-component{
+    background: yellow;
+
+    label{
+      background: pink;
+    }
+
+    input{
+      width: 90px;
+      height: 24px;
+      border: 1px solid var(--gray--500);
+    }
+  }
+  
   button[type="submit"]{
     position: absolute;
     top: 0;
