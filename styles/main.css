@@ -399,26 +399,47 @@ a{
 
 /* 웹 관련 용어 */
 .term{
-  background: yellow;
+  background: var(--gray--500);
+  border: 1px solid var(--gray--600);
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
 
   h2{
-    background: pink;
+    font-size: 0.9375rem;
+    line-height: 1.5;
   }
 
-  div{
-    background: skyblue;
+  dl{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
   }
-
+  
   dt{
-    background: salmon;
+    color: var(--accent--blue);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  dt, .brief{
+    float: right;
+    width: 142px;
+    margin-top: -3px;
   }
 
   .thumbnail{
-    background: lime;
+    float: left;
   }
 
-  .brief{
-    background: aquamarine;
+  .cross dt, .cross .brief{
+    float: left;
+  }
+
+  .cross .thumbnail{
+    float: right;
   }
 }
 
