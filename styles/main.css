@@ -377,6 +377,10 @@ a{
   }
 }
 
+/* 유효성 검사 */
+.validation{
+  background: yellow;
+}
 
 /* 슬로건 */
 .slogan{
