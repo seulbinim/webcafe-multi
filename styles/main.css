@@ -1,3 +1,5 @@
+@import url(./fontello.css);
+
 /* 컬러 테마 */
 :root{
   /* Color styles */
@@ -147,7 +149,7 @@ a{
 }
 
 .menu{
-  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 30.73%, var(--primary) 64.58%, var(--secondary) 100%);
+  background: var(--primary) linear-gradient(180deg, var(--secondary) 0%, var(--primary) 30.73%, var(--primary) 64.58%, var(--secondary) 100%);
   padding-left: 205px;
   border-top: 2px solid var(--black);
   display: flow-root;
@@ -300,7 +302,7 @@ a{
 
 /* 로그인 */
 .login{
-  background: orangered;
+  background: var(--primary) radial-gradient(circle at right top, var(--primary), var(--secondary));
   box-shadow: 5px 5px 0 0 var(--gray--500);
   padding: 12px;
   border-radius: 5px;
@@ -325,26 +327,42 @@ a{
     position: relative;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--gray--500);
+
+    & div:nth-child(2){
+      margin-bottom: 8px;
+    }
   }
 
   .input-component{
-    background: yellow;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 
     label{
-      background: pink;
+      width: 4em;
+      /* vertical-align: middle; */
     }
 
     input{
       width: 90px;
       height: 24px;
       border: 1px solid var(--gray--500);
+      border-radius: 5px;
     }
   }
-  
+
   button[type="submit"]{
     position: absolute;
     top: 0;
     right: 0;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.8125rem;
+    padding: 0;
+    border: 0;
+    width: 50px;
+    height: 56px;
+    border-radius: 5px;
   }
 
   & > div{
@@ -352,6 +370,10 @@ a{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+
+    a::before{
+      color: var(--primary);
+    }
   }
 }
 
