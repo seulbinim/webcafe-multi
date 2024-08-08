@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/main.css" />
   <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/tabs.js"></script>
 </head>
 <body>
   <header class="layout header">
@@ -198,7 +199,7 @@
       </form>
       <div class="board tabs">
         <h2 class="sr-only" id="tablist-1">게시판</h2>
-        <div role="tablist" class="tablist" aria-labelledby="tablist-1">
+        <div role="tablist" class="tablist automatic" aria-labelledby="tablist-1">
           <button type="button" role="tab" class="tab is-selected" id="tab-1" aria-controls="tabpanel-1" aria-selected="true">공지사항</button>
           <button type="button" role="tab" class="tab" id="tab-2" aria-controls="tabpanel-2" aria-selected="false" tabindex="-1">자료실</button>
         </div>
