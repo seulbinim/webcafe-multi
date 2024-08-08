@@ -313,14 +313,18 @@ a{
 
   form, & > div{
     background: var(--white);
+    padding: 8px;
   }
 
   form{
     border-radius: 5px 5px 0 0;
+    padding-bottom: 0;
   }
 
   fieldset{
     position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gray--500);
   }
 
   button[type="submit"]{
@@ -331,8 +335,10 @@ a{
 
   & > div{
     border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
-
 }
 
 
