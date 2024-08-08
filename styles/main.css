@@ -443,6 +443,52 @@ a{
   }
 }
 
+/* 검색 */
+.search-form{
+  border: 1px solid var(--gray--600);
+  border-bottom: 0;
+  background: var(--gray--500) linear-gradient(180deg, var(--gray--500), var(--gray--300));
+  border-radius: 5px 5px 0 0;
+  padding: 12px 24px 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+
+  .search-component{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+
+    label{
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    span{
+      margin-right: 4px;
+    }
+
+    input{
+      flex-grow: 1;
+      height: 26px;
+      border: 1px solid var(--gray--600);
+      border-radius: 5px;
+    }
+  }
+
+  button[type="submit"]{
+    background: var(--black);
+    color: var(--white);
+    border: 0;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    height: 26px;
+  }
+}
 
 
 /* 슬로건 */
