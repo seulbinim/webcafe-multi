@@ -295,6 +295,9 @@ a{
 }
 .group2{
  width:380px;
+ display: flex;
+ flex-flow: column nowrap;
+ gap: 28px;
 }
 .group3{
   width: 190px;
@@ -492,8 +495,66 @@ a{
 
 /* 게시판 */
 .board{
-  background: yellow;
+  position: relative;
 }
+
+.tablist{
+  display: flex;
+  flex-flow: row nowrap;
+
+  .tab{
+    border: 1px solid var(--gray--600);
+    background: var(--gray--500);
+    border-radius: 5px 5px 0 0;
+    padding: 8px 16px;
+    color: var(--gray--800);
+
+    &[aria-selected="true"]{
+      background: var(--white);
+      color: var(--primary);
+      border-color: currentColor; 
+      border-bottom-color: var(--white);
+    }
+  }
+}
+
+.tabpanel{
+  &.is-hidden{
+    display: none;
+  }
+
+  ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  li{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+
+    a{
+      flex: 1 1 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .more{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    span{
+      color: var(--accent--green);
+      margin-right: 0.5em;
+    }
+  }
+}
+
 
 /* 슬로건 */
 .slogan{
