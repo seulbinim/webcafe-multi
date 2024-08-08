@@ -380,6 +380,23 @@ a{
 /* 유효성 검사 */
 .validation{
   background: yellow;
+
+  li{
+    margin: 16px 0;
+    background: var(--gray--500);
+    border: 1px solid var(--gray--700);
+    border-radius: 20px;
+  }
+  
+  a{
+    display: block;
+    padding: 10px 0 10px 36px;
+    background: url("./../assets/bg/validation_icon.png") no-repeat 15px 50%;
+
+    &:hover, &:focus{
+      color: var(--primary);
+    }
+  }
 }
 
 /* 슬로건 */
