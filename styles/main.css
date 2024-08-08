@@ -379,8 +379,6 @@ a{
 
 /* 유효성 검사 */
 .validation{
-  background: yellow;
-
   li{
     margin: 16px 0;
     background: var(--gray--500);
@@ -398,6 +396,33 @@ a{
     }
   }
 }
+
+/* 웹 관련 용어 */
+.term{
+  background: yellow;
+
+  h2{
+    background: pink;
+  }
+
+  div{
+    background: skyblue;
+  }
+
+  dt{
+    background: salmon;
+  }
+
+  .thumbnail{
+    background: lime;
+  }
+
+  .brief{
+    background: aquamarine;
+  }
+}
+
+
 
 /* 슬로건 */
 .slogan{
