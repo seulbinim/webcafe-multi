@@ -61,6 +61,12 @@ a{
   list-style: none;
 }
 
+.reset-box{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -291,6 +297,13 @@ a{
 .group3{
   width: 190px;
 }
+
+/* 로그인 */
+.login{
+  background: orangered;
+  box-shadow: 5px 5px 0 0 var(--gray--500);
+}
+
 
 /* 슬로건 */
 .slogan{
