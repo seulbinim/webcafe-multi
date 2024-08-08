@@ -196,6 +196,23 @@
         </div>
         <button type="submit">검색</button>
       </form>
+      <div class="board">
+        <h2 class="sr-only">게시판</h2>
+        <div role="tablist" class="tablist">
+          <button type="button" role="tab" class="tab" id="tab1" aria-controls="tabpanel1" aria-selected="true">공지사항</button>
+          <button type="button" role="tab" class="tab" id="tab2" aria-controls="tabpanel2" aria-selected="false">자료실</button>
+        </div>
+        <div class="tabpanel" id="tabpanel1" aria-labelledby="tab1">
+          <ul>
+            <li><a href="/"><span class="fas fa-circle-dot"></span>HTML의 모든 것을 알려주마 샘플 활용법</a><time datetime="2024-08-08T15:51:30">2024.08.08</time></li>
+            <li><a href="/"><span class="fas fa-circle-dot"></span>W3C 사이트 리뉴얼 및 공지사항</a><time datetime="2024-08-08T15:51:30">2024.08.08</time></li>
+            <li><a href="/"><span class="fas fa-circle-dot"></span>KWCAG 2.1 소식</a><time datetime="2024-08-08T15:51:30">2024.08.08</time></li>
+            <li><a href="/"><span class="fas fa-circle-dot"></span>서버 점검으로 인한 사이트 이용안내 입니다.</a><time datetime="2024-08-08T15:51:30">2024.08.08</time></li>
+            <li><a href="/"><span class="fas fa-circle-dot"></span>여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어봅시다.</a><time datetime="2024-08-08T15:51:30">2024.08.08</time></li>
+          </ul>
+        </div>
+        <div class="tabpanel" id="tabpanel2" aria-labelledby="tab2"></div>
+      </div>
     </div>
     <div class="group group3">그룹3</div>
   </main>
