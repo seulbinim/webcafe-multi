@@ -737,6 +737,33 @@ a{
   }
 }
 
+.related{
+  gap: 8px;
+
+  ul{
+    background: var(--white);
+    border: 1px solid var(--gray--600);
+    border-radius: 5px;
+    height: 30px;
+    overflow: hidden;
+    transition: height 0.6s, padding-top 0.6s 0.6s;
+
+    &:hover{
+      height: 170px;
+      padding-top: 12px;
+    }
+
+    li{
+      padding: 2px 12px;
+    }
+
+    a{
+      display: block;
+      /* line-height: 25px; */
+      padding: 2px 12px;
+    }
+  }
+}
 
 /* 슬로건 */
 .slogan{
