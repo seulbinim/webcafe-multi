@@ -591,7 +591,8 @@ a{
   }
 }
 
-.news-item{
+/* position을 활용한 배치 */
+/* .news-item{
   position: relative;
   margin-top: 37px;
   padding-left: 130px;
@@ -628,8 +629,40 @@ a{
     }
   }
 
-}
+} */
 
+/* Gird 활용한 배치 */
+.news-item{
+  margin-top: 37px;
+  line-height: 1.5;
+
+  h3{
+    font-size: 0.875rem;
+  }
+
+  time{
+    span{
+      margin-right: 0.5em;
+    }
+  }
+
+  p{
+    
+  }
+
+  figure{
+    text-align: center;
+
+    img{
+      box-shadow: 0 15px 25px 10px var(--gray--500);
+    }
+
+    figcaption{
+      
+    }
+  }
+
+}
 /* 슬로건 */
 .slogan{
   background-color: lime;
