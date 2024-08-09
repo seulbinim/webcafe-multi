@@ -96,7 +96,7 @@ a{
 .gradient-box{
   border: 1px solid var(--gray--600);
   border-radius: 5px;
-  background: var(--gray--500) linear-gradient(var(--gray--600), var(--gray--400));
+  background: var(--gray--400) linear-gradient(var(--gray--400), var(--gray--200));
 }
 
 /* 메인 색상으로 텍스트 색상 지정 */
@@ -349,6 +349,9 @@ a{
 }
 .group3{
   width: 190px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 28px;
 }
 
 /* 로그인 */
@@ -764,6 +767,58 @@ a{
     }
   }
 }
+
+/* 인기 사이트 */
+.favorite{
+  position: relative;
+  gap: 8px;
+
+  ol{
+    gap: 8px;
+    /* counter-reset: chapter section 0; */
+
+    li{
+      counter-increment: number;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      &::before{
+        content: counter(number);
+        color: var(--white);
+        background: var(--gray--600);
+        padding: 2px 4px;
+        font-size: 0.75rem;
+        width: calc(1em + 8px);
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 0.5em;
+      }
+
+      em{
+        width: 9px;
+        height: 11px;
+        margin-left: auto;
+        background: url("./../assets/bg/rank.png") no-repeat;
+      }
+
+      .stop{
+        background-position: 0 50%;
+      }
+      
+      .down{
+        background-position: 0 100%;
+      }
+    }
+  }
+
+  .more{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
+
 
 /* 슬로건 */
 .slogan{
