@@ -234,7 +234,7 @@ a{
       display: inline-block;
       padding: 6px 8px;
       margin-right: 16px;
-      background: yellow url("./../assets/bg/bullet2.png") no-repeat 0 0;
+      background: url("./../assets/bg/bullet2.png") no-repeat 0 0;
     }
   }
 
@@ -775,7 +775,7 @@ a{
 
   ol{
     gap: 8px;
-    /* counter-reset: chapter section 0; */
+    counter-reset: number 0;
 
     li{
       counter-increment: number;
@@ -822,8 +822,21 @@ a{
 
 /* 슬로건 */
 .slogan{
-  background-color: lime;
-  height: 10vh;
+  gap: 20px;
+
+  h2{
+    translate: 0 20px;
+    flex-basis: 110px;
+    flex-shrink: 0;
+    height: 83px;
+    background: url("./../assets/bg/coffee.png") no-repeat;
+  }
+
+  p{
+    color: var(--gray--800);
+    font-size: 0.8125rem;
+    align-self: flex-end;
+  }
 }
 
 /* 푸터 */
