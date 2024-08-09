@@ -635,6 +635,10 @@ a{
 .news-item{
   margin-top: 37px;
   line-height: 1.5;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 20px 36px auto;
+  /* grid-auto-rows: auto; */
 
   h3{
     font-size: 0.875rem;
@@ -652,6 +656,7 @@ a{
 
   figure{
     text-align: center;
+    grid-area: 1 / 1 / 4 / 2;
 
     img{
       box-shadow: 0 15px 25px 10px var(--gray--500);
