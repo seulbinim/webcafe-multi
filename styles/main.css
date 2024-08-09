@@ -840,10 +840,51 @@ a{
 }
 
 /* 푸터 */
-.footer-bg{
-  background-color: silver;
-}
 .footer{
-  background-color: skyblue;
-  height: 10vh;
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 160px 1fr 120px;
+  column-gap: 30px;
+  grid-template-areas: "logo guide badge"
+                       "logo address badge"
+                       "logo copyright badge";
+  align-items: start;
+}
+
+.mono-logo{
+  grid-area: logo;
+  align-self: center;
+}
+
+.guide{
+  grid-area: guide;
+  background: var(--gray--700);
+  color: var(--white);
+  border-radius: 20px;
+  justify-content: center;
+
+  li{
+    padding: 4px 8px;
+
+    a{
+      display: block;
+      padding: 4px 8px
+    }
+  }
+}
+
+.address{
+  grid-area: address;
+  font-style: normal;
+  margin: 8px 0;
+}
+
+.copyright{
+  grid-area: copyright;
+  font-size: 0.875rem;
+}
+
+.badge{
+  grid-area: badge;
+  justify-content: flex-end;
 }
