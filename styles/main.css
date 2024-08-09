@@ -92,6 +92,36 @@ a{
   }
 }
 
+/* 그라디언트 배경 */
+.graddient-box{
+  border: 1px solid var(--gray--600);
+  border-radius: 5px;
+  background: var(--gray--500) linear-gradient(var(--gray--600), var(--gray--400));
+}
+
+/* 메인 색상으로 텍스트 색상 지정 */
+.accent-color{
+  color: var(--primary);
+}
+
+/* 안쪽 여백이 12px인 스타일 */
+.spacing-md{
+  padding: 12px;
+}
+
+/* 플렉스 - row */
+.flex-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* 플렉스 - column */
+.flex-column{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer{
   /* width: 940px;
