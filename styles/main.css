@@ -93,7 +93,7 @@ a{
 }
 
 /* 그라디언트 배경 */
-.graddient-box{
+.gradient-box{
   border: 1px solid var(--gray--600);
   border-radius: 5px;
   background: var(--gray--500) linear-gradient(var(--gray--600), var(--gray--400));
@@ -119,6 +119,13 @@ a{
 .flex-column{
   display: flex;
   flex-flow: column nowrap;
+}
+
+/* 섹션 제목 */
+.headline{
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 
@@ -696,8 +703,41 @@ a{
       
     }
   }
-
 }
+
+/* 신규이벤트 및 관련사이트 */
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 8px;
+
+  button{
+    background: url(./../assets/bg/back_forward.png) no-repeat;
+    width: 19px;
+    height: 18px;
+    border: 0;
+    padding: 0;
+  }
+
+  .event-button-next{
+    background-position: 100% 0;
+  }
+
+  figure{
+    text-align: center;
+    
+    img{
+      box-shadow: 5px 5px 0 0 var(--gray--700);
+    }
+  
+    figcaption{
+      margin: 10px 0;
+    }
+  }
+}
+
+
 /* 슬로건 */
 .slogan{
   background-color: lime;
