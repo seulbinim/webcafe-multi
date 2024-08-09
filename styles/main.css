@@ -56,6 +56,7 @@ a{
   margin: 0 auto;
 }
 
+/* 리스트 기본 스타일 초기화 */
 .reset-list{
   margin: 0;
   padding-left: 0;
@@ -63,12 +64,14 @@ a{
   list-style: none;
 }
 
+/* 박스 기본 스타일 초기화 */
 .reset-box{
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+/* 스크린리더 환경을 위한 숨김 콘텐츠 */
 .sr-only{
   position: absolute;
   width: 1px;
@@ -79,6 +82,14 @@ a{
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* 더보기 링크 */
+.more{
+  span{
+    color: var(--accent--green);
+    margin-right: 0.5em;
+  }
 }
 
 /* 레이아웃 */
@@ -551,14 +562,73 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-
-    span{
-      color: var(--accent--green);
-      margin-right: 0.5em;
-    }
   }
 }
 
+/* 새소식 */
+.news{
+  position: relative;
+
+  &::before{
+    content: "";
+    background: linear-gradient(to right, var(--gray--500), var(--white));
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 37px;
+  }
+
+  h2{
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--primary); 
+  }
+
+  .more{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.news-item{
+  position: relative;
+  margin-top: 37px;
+  padding-left: 130px;
+  min-height: 105px;
+  line-height: 1.5;
+
+  h3{
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+  }
+
+  time{
+    span{
+      margin-right: 0.5em;
+    }
+  }
+
+  p{
+    margin-top: 12px;
+  }
+
+  figure{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    text-align: center;
+
+    img{
+      box-shadow: 0 15px 25px 10px var(--gray--500);
+    }
+
+    figcaption{
+      margin-top: 15px;
+    }
+  }
+
+}
 
 /* 슬로건 */
 .slogan{
